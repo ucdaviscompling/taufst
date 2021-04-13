@@ -1,0 +1,147 @@
+body {
+	background-color: #efefef;
+	color: #222222;
+	font-family: 'Source Sans Pro', arial, verdana;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: #2a9660;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0px;
+}
+
+a:hover {
+	color: #2a9660;
+	text-decoration: underline;
+}
+
+.header {
+	color: #2a9660;
+	font-size: 15px;
+	padding: 10px;
+}
+
+.sep {
+	background-color: #bfbfbf;
+	height: 1px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.answer {
+	font-size: 18px;
+	font-family: monospace;
+	padding: 5px;
+}
+
+.write {
+	background-color: #f9e38d;
+	border: 1px solid #e0c96c;
+	display: none;
+	color: #413507;
+	font-size: 18px;
+	font-family: monospace;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+.goal {
+	background-color: #e0e0e0;
+	margin: 10px;
+	margin-top: 20px;
+	padding: 5px 10px;
+}
+
+.last {
+	color: #777777;
+	font-size: 14px;
+	font-family: monospace;
+	padding: 0px 10px;
+	position: relative;
+	top: 15px;
+}
+
+#max_answers-container {
+	display: none;
+} 
+
+#limit-container, #max_answers-container {
+	background-color: #dfdfdf;
+	border: 1px solid #bfbfbf;
+	position: relative;
+	left: 10px;
+	padding: 5px;
+}
+
+#limit, #max_answers {
+	background-color: #cfcfcf;
+	border: none;
+	color: #222222;
+	font-family: 'Source Sans Pro', arial, verdana;
+	font-size: 15px;
+	padding: 0px 5px;
+	width: 50px;
+}
+
+
+#tau-canvas {
+	margin-top: 30px;
+}
+
+#runable {
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+#code {
+	border: 2px solid #4551c1 !important;
+	color: #ffffff;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 18px;
+	height: 580px;
+	padding: 10px;
+    resize: none !important;
+}
+
+
+#output {
+	border: 2px solid #4551c1 !important;
+	color: #357ce6;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 18px;
+	height: 496px;
+	padding: 10px;
+    
+    overflow:auto;
+    resize: none !important;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+#program-container, #query-container, #canvas-container {
+	float: left;
+	width: 50%;
+}
+
+#query {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#query-container {
+    padding: 10px;
+	background-color: #efefef;
+}
+
+#program-container > div, #query-container > div, #transformations-container > div {
+	padding: 10px;
+}
+

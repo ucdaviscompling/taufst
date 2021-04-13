@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<title>FSTs with Tau Prolog</title>
+
+    	<meta name="description" content="A simple implementation of Finite-State Transducers in Prolog">
+    	<meta name="author" content="UC Davis LIN 177">
+
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!-- Tau Prolog modules -->
+		<script type="text/javascript" src="js/tau-prolog.js"></script>
+	
+		<!-- Codemirror -->
+		<script src="js/codemirror.js"></script>
+		<link rel="stylesheet" href="css/codemirror.css">
+		<link rel="stylesheet" href="css/tau.css">
+		<link rel="stylesheet" href="css/tauout.css">
+		<script src="js/simple.js"></script>
+		<script src="js/prolog.js"></script>
+		<script src="js/placeholder.js"></script>
+		<link rel="StyleSheet" href="css/main.css" type="text/css" media="ALL" />
+		<script type="text/javascript" src="js/main.js"></script>
+
+  	</head>
+  
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="page-header">
+						<h1>
+						</h1>
+					</div>
+						<div class="btn-group" role="group" style="padding: 10px">
+							<button class="btn btn-secondary" type="button" onclick="newFile()">
+								New
+							</button>
+							<button class="btn btn-secondary" type="button" onclick="loadFile()">
+								Load
+							</button>
+							<button class="btn btn-secondary" type="button" onclick="saveFile()">
+								Save
+							</button> 
+
+							&nbsp;
+							<input type="text" size="58" id="fileName" style="font-family: 'Inconsolata', monospace, courier, serif; font-size: 14px; padding: 5px;">
+						</div>
+					
+						<div id="code" style="border: 0px solid #ddd; padding: 0px;">
+						</div>
+				</div>
+				<div class="col-sm-6" style="padding: 20px; padding-top: 66px;">
+					<div id="output" style="padding: 20px">
+					</div>
+					<form role="form" class="form">
+						<br>
+						<div class="form-group" style="border: 2px solid #4551c1; background: #fff; padding: 10px; padding-bottom: 10px;">
+							<div id="query"></div>
+						</div>
+
+						<span id="limit-container" style="display: none;" title="Maximum number of inferences">limit: <input id=
+	"limit" type="text" value="20000" /></span>
+						<span id="max_answers-container" style="display: none;" title="Maximum number of answers">max-answers: <
+	input id="max_answers" type="text" value="100" /></span>
+						<span style="margin-left: 20px; display: none;" id="quoted-container" title="Quoted"><input type="checkb
+	ox" id="quoted" name="quoted" checked="checked"> <label for="quoted">quoted</label></span>
+						<span style="margin-left: 10px; display: none;" id="ignore_ops-container" title="Ignore operators"><input type="checkbox" id="ignore_ops" name="ignore_ops"> <label for="ignore_ops">ignore_ops</label></span>
+						<span style="margin-left: 10px; display: none;" id="numbervars-container" title="Numbervars"><input type="checkbox" id="numbervars" name="numbervars"> <label for="numbervars">numbervars</label></span>
+					</form>
+				</div>
+			</div>
+		</div>
+  	</body>
+</html>
